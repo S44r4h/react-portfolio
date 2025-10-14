@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@plugin "daisyui" {
+  themes: abyss --default;
+}
+
+@theme {
+  --font-display: "JetBrains Mono", "sans-serif";
+  --font-headers: "Space Grotesk", "monospace";
+  --font-ibm: "IBM Plex Mono", "monospace";
+}
