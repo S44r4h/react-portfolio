@@ -1,4 +1,5 @@
 import "./App.css";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -40,11 +41,9 @@ function Navbar() {
       </div>
       <div className="hidden lg:flex absolute top-1/2 right-0 -translate-y-1/2 text-3xl">
         <ul className="flex flex-col gap-4 pr-4">
+          <li></li>
           <li>
-            <a>About</a>
-          </li>
-          <li>
-            <a>Projects</a>
+            <Link to="/About">About</Link>
           </li>
           <li>
             <a>Contact me</a>
