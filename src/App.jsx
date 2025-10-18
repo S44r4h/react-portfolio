@@ -49,10 +49,9 @@ function App() {
           </p>
         </div>
       </div>*/}
-      <div className="grid grid-cols-1 w-9/10 h-full gap-7 py-5 font-ibm ">
+      <div className="grid grid-cols-1 w-9/10 h-full gap-7 py-5 font-ibm min-[440px]:justify-items-center min-[620px]:w-7/10 md:text-lg ">
         <div className="border-1 bg-base-100 flex flex-col p-3 items-center">
           <pre className="text-5xl p-10" id="ascii"></pre>
-
           <div className=" text-left ">
             <p className="text-secondary">Webdev info</p>
             <p>------------------</p>
@@ -183,7 +182,8 @@ function App() {
           </div>
         </div>
         {/* Contact me */}
-        <div className="border-1 bg-base-100 text-left flex flex-col justify-center p-3">
+        {/* w-440 px vois olla jo w-7/10? */}
+        <div className="border-1 bg-base-100 text-left flex flex-col justify-center p-3 min-[440px]:w-7/10 ">
           <h1 className="text-secondary">Contact</h1>
           <p>------------</p>
           <p>
