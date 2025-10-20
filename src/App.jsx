@@ -1,7 +1,7 @@
 import "./App.css";
 
 function App() {
-  const frames = [`(•_•)`, `♡(>ᴗ•)`, `♡(•ᴗ•)`];
+  const frames = [`♡(>ᴗ•)`, `♡(•ᴗ•)`];
 
   let i = 0;
   setInterval(() => {
@@ -49,8 +49,15 @@ function App() {
           </p>
         </div>
       </div>*/}
-      <div className="grid grid-cols-1 w-9/10 h-full gap-7 py-5 font-ibm min-[440px]:justify-items-center min-[620px]:w-7/10 md:text-lg ">
-        <div className="border-1 bg-base-100 flex flex-col p-3 items-center">
+      <div className="grid grid-cols-1 w-9/10 h-full gap-7 py-5 font-ibm min-[440px]:justify-items-center min-[620px]:w-7/10 md:text-lg lg:text-sm lg:w-full lg:grid-cols-12 lg:grid-rows-7 lg:gap-4 ">
+        {/* Small upper-bar */}
+        <div className="flex-col absolute top-0 left-0 hidden lg:flex">
+          <div className="bg-base-content text-base-100 p-2">
+            /~Saara's portfolio
+          </div>
+        </div>
+        {/* Info */}
+        <div className="border-1 bg-base-100 flex flex-col p-3 items-center lg:flex-row lg:col-span-6 lg:row-span-4 lg:col-start-4 lg:row-start-2">
           <pre className="text-5xl p-10" id="ascii"></pre>
           <div className=" text-left ">
             <p className="text-secondary">Webdev info</p>
@@ -94,8 +101,30 @@ function App() {
             </div>
           </div>
         </div>
+        {/* Dark-mode button */}
+        <div className="border-1  bg-base-100 flex-col justify-center  hidden lg:flex lg:col-start-12 p-3">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-10"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
+            />
+          </svg>
+        </div>
+        {/* Clock hidden < lg */}
+        <div className="border-1  bg-base-100 flex-col justify-center  hidden lg:flex lg:col-start-11 p-3 ">
+          <h1 className=" text-5xl ">12:00</h1>
+        </div>
+
         {/* Tech info */}
-        <div className="border-1  bg-base-100 flex flex-col justify-center p-3">
+        <div className="border-1  bg-base-100 flex flex-col justify-center lg:col-span-6 lg:row-span-2 lg:row-start-6 lg:justify-start p-3">
           <h1 className="text-left text-secondary">Technical Skills</h1>
           <p>----------------</p>
           <div className="grid grid-cols-5 gap-5 ">
@@ -105,7 +134,7 @@ function App() {
                 viewBox="0 0 24 24"
                 strokeWidth={1}
                 fill="currentColor"
-                className="size-10 md:size-15"
+                className="size-10 md:size-15 lg:size-10"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <title>HTML5</title>
@@ -121,7 +150,7 @@ function App() {
                 viewBox="0 0 24 24"
                 strokeWidth={1}
                 fill="currentColor"
-                className="size-10 md:size-15"
+                className="size-10 md:size-15 lg:size-10"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <title>JavaScript</title>
@@ -137,7 +166,7 @@ function App() {
                 viewBox="0 0 24 24"
                 strokeWidth={1}
                 fill="currentColor"
-                className="size-10 md:size-15"
+                className="size-10 md:size-15  lg:size-10"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <title>Node.js</title>
@@ -153,7 +182,7 @@ function App() {
                 viewBox="0 0 24 24"
                 strokeWidth={1}
                 fill="currentColor"
-                className="size-10 md:size-15"
+                className="size-10 md:size-15  lg:size-10"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <title>WordPress</title>
@@ -169,7 +198,7 @@ function App() {
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 fill="currentColor"
-                className="size-10 md:size-15"
+                className="size-10 md:size-15 lg:size-10"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <title>React</title>
@@ -183,7 +212,7 @@ function App() {
         </div>
         {/* Contact me */}
         {/* w-440 px vois olla jo w-7/10? */}
-        <div className="border-1 bg-base-100 text-left flex flex-col justify-center p-3 min-[440px]:w-7/10 ">
+        <div className="border-1 bg-base-100 text-left flex flex-col justify-center p-3 min-[440px]:w-7/10 lg:col-span-4 lg:row-span-2 lg:col-start-9 lg:row-start-5 lg:justify-start ">
           <h1 className="text-secondary">Contact</h1>
           <p>------------</p>
           <p>
