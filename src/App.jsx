@@ -51,10 +51,14 @@ function App() {
       </div>*/}
       <div className="grid grid-cols-1 w-9/10 h-full gap-7 py-5 font-ibm min-[440px]:justify-items-center min-[620px]:w-7/10 md:text-lg lg:text-sm lg:w-full lg:grid-cols-12 lg:grid-rows-7 lg:gap-4 ">
         {/* Small upper-bar */}
-        <div className="flex-col absolute top-0 left-0 hidden lg:flex">
+        <div className="flex-row absolute top-0 left-0 hidden lg:flex">
           <div className="bg-base-content text-base-100 p-2">
             /~Saara's portfolio
           </div>
+          <div className="bg-primary text-base-100 p-2">
+            Build: React | Tailwind
+          </div>
+          <div className="bg-secondary text-base-100 p-2">Ver | 1.00</div>
         </div>
         {/* Info */}
         <div className="border-1 bg-base-100 flex flex-col p-3 items-center lg:flex-row lg:col-span-6 lg:row-span-4 lg:col-start-4 lg:row-start-2">
