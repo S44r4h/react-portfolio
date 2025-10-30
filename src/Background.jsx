@@ -1,7 +1,13 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "./Navbar.jsx";
+import { useState } from "react";
 
 const Background = () => {
+  //let [count, setCount] = useState(0);
+  let [count, setCount] = useState(() => {
+    let saved = 0;
+    return saved;
+  });
   return (
     //<div className="absolute top-0 -z-10 h-full w-full bg-base-100">
     //  {/* Aurora Mystic Mist Background /patterncraft.fun */}
@@ -16,8 +22,16 @@ const Background = () => {
     //    }}
     //  />
     //</div>
-    <div className="bg-pink-500 w-50 rounded-xs text-center md:order-0">
-      info
+    <div className=" w-50 rounded-xs text-center md:order-0">
+      <button
+        className="btn btn-primary"
+        onClick={() => {
+          setCount(count + 1);
+        }}
+      >
+        PAINA
+      </button>
+      <p>{count}</p>
     </div>
   );
 };
