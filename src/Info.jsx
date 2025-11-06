@@ -1,15 +1,11 @@
 function Info() {
   /* Animation */
-  const frames = [`♡(>ᴗ•)`, `♡(•ᴗ•)`];
 
-  let i = 0;
-  setInterval(() => {
-    document.getElementById("ascii").textContent = frames[i % frames.length];
-    i++;
-  }, 500);
   return (
     <>
-      <pre className="text-5xl p-10" id="ascii"></pre>
+      <div className="pr-10">
+        <img src="/public/dithered-image.png" />
+      </div>
       <div className=" text-left ">
         <p className="text-secondary font-bold">Webdev info</p>
         <p>------------------</p>
