@@ -12,7 +12,11 @@ function Projects() {
           Full-stack app for managing game wishlists and played lists, with
           admin tools for game and user management.
           <div className="flex flex-col pt-3 text-primary">
-            <a target="_blank" className="link link-primary">
+            <a
+              href="https://pixel-list.vercel.app/"
+              target="_blank"
+              className="link link-primary"
+            >
               Live site
             </a>
             <a target="_blank" className="link link-primary pt-3">
@@ -30,7 +34,11 @@ function Projects() {
           Tarot Service Website. Custom WordPress site built with Elementor and
           a tailored child theme for design and layout modifications.
           <div className="flex flex-col pt-3 text-primary">
-            <a target="_blank" className="link link-primary">
+            <a
+              href="https://sv004212.nube.fi/Violetcrow/"
+              target="_blank"
+              className="link link-primary"
+            >
               Live site
             </a>
           </div>

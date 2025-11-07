@@ -3,10 +3,11 @@ function Info() {
 
   return (
     <>
-      <div className="pr-10">
-        <img src="/public/dithered-image.png" />
+      <div className="w-50 h-50 lg:w-60">
+        <div className="pixelart-to-css "></div>
+        {/*<img src="/public/dithered-image.png" />  */}
       </div>
-      <div className=" text-left ">
+      <div className="text-left ">
         <p className="text-secondary font-bold">Webdev info</p>
         <p>------------------</p>
         <p>
