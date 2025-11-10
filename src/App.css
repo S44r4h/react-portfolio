@@ -18,6 +18,7 @@ body::before {
   z-index: -1;
 }
 
+/* made by https://pixelartcss.com/ */
 .pixelart-to-css {
   box-shadow: 60px 10px 0 0 var(--color-secondary),
     70px 10px 0 0 var(--color-secondary), 80px 10px 0 0 var(--color-secondary),
