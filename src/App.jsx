@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Info from "./Info";
 import DarMode_Button from "./DarkMode_btn";
 import TechSkills from "./TechSkills";
-import Contact from "./contact";
+import Contact from "./Contact";
 import UpperBar from "./UpperBar";
 import GithubStats from "./GitHubStats";
 import Projects from "./Projects";
