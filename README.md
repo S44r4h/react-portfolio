@@ -1,1 +1,1 @@
-Built with React and styled using daisyUI, this site reflects my recent fascination with the Linux Ricing aesthetic. I aim for a minimalist, compact layout where all key information fits on a single screen
+Built with React and styled using daisyUI, this site reflects my recent fascination with the Linux Ricing aesthetic. I wanted minimalist, compact layout where all key information fits on a single screen
