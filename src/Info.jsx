@@ -1,6 +1,4 @@
 function Info() {
-  /* Animation */
-
   return (
     <>
       <div className="w-50 h-50 lg:w-60">

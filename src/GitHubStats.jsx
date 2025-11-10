@@ -11,7 +11,7 @@ function GithubStats({ isDark }) {
     <>
       <img
         src={`https://raw.githubusercontent.com/S44r4h/S44r4h/main/profile-summary-card-output/${githubTheme}/0-profile-details.svg`}
-        alt="GitHub-profiilikortti"
+        alt="GitHub-profilecard"
       />
     </>
   );

@@ -48,8 +48,8 @@ function App() {
         <div className="border-2  bg-base-100 flex flex-col justify-center p-3 lg:col-span-6 lg:row-span-2 lg:row-start-6 lg:self-start 2xl:border-2 ">
           <TechSkills />
         </div>
-        {/* w-440 px vois olla jo w-7/10? */}
-        <div className="border-2 bg-base-100  flex flex-col justify-center p-3 min-[440px]:w-7/10 lg:col-span-3 lg:row-span-2 lg:col-start-10 lg:row-start-4 lg:self-start lg:justify-self-center ">
+
+        <div className="border-2 bg-base-100  flex flex-col justify-center p-3  lg:col-span-3 lg:row-span-2 lg:col-start-10 lg:row-start-4 lg:self-start lg:justify-self-center ">
           <Contact />
         </div>
         <div className="border-2 bg-base-100 flex flex-col p-3  lg:self-center  lg:flex-row lg:col-span-4 lg:row-span-2 lg:col-start-8 lg:row-start-6">
