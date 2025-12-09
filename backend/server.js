@@ -4,7 +4,16 @@ import cors from "cors";
 import express from "express";
 import Parser from "rss-parser";
 
-const parser = new Parser();
+let parser = new Parser({
+  customFields: {
+    item: [
+      ["letterboxd:filmTitle", "filmtitle"],
+      ,
+      ["letterboxd:filmYear", "filmyear"],
+      ["letterboxd:watchedDate", "watchdate"],
+    ],
+  },
+});
 const movie_list = [];
 
 dotenv.config();
@@ -22,7 +31,13 @@ async function test(url) {
 
     movies.slice(0, 4).forEach((element) => {
       if (element.guid.includes("letterboxd-watch")) {
-        movie_list.push({ title: element.title, date: element.isoDate });
+        let movietitletrim = element.title.split(" - ");
+        movie_list.push({
+          watchdate: element.watchdate,
+          title: element.filmtitle,
+          filmyear: element.filmyear,
+          own_rating: movietitletrim[1],
+        });
       }
     });
   } catch (error) {

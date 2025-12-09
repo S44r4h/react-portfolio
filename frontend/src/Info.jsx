@@ -1,10 +1,11 @@
 function Info() {
   return (
     <>
-      <div className="w-55 h-60 lg:w-60 aling-center">
+      {/* <div className="w-55 h-60 lg:w-60 aling-center">
         <div className="pixelart-to-css "></div>
-        {/*<img src="/public/dithered-image.png" />  */}
-      </div>
+        {/*<img src="/public/dithered-image.png" />  
+      </div>  */}
+
       <div className="text-left ">
         <p className="text-secondary font-bold">Webdev info</p>
         <p>------------------</p>
