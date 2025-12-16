@@ -53,10 +53,10 @@ function App() {
         <div className="flex-row absolute top-0 left-0 hidden lg:flex">
           <UpperBar />
         </div>
-        <div className=" border-2 bg-base-100 flex flex-col p-6 items-center lg:p-10 lg:flex-row lg:col-span-3  lg:col-start-6 lg:row-start-3  xl:row-start-2 xl:row-span-4   2xl:self-center 2xl:py-20 ">
+        <div className=" border-2 bg-base-100 flex flex-col p-6 items-center lg:p-10 lg:flex-row lg:col-span-4 lg:row-span-4  lg:col-start-6 lg:row-start-2  xl:row-span-4   2xl:self-center 2xl:py-20 ">
           <Info />
         </div>
-        <div className="border-2 bg-base-100 flex flex-col p-3 justify-center lg:col-span-3 lg:col-start-6 row-span-4  row-start-6  ">
+        <div className="border-2 bg-base-100 flex flex-col p-3 justify-center lg:col-span-3 lg:col-start-6 row-span-2 row-start-6 ">
           <Projects />
         </div>
         <div className="border-2  bg-base-100 flex-col  p-3 hidden lg:flex lg:col-start-12 lg:row-start-1 lg:self-center  2xl:border-2 ">
@@ -65,8 +65,14 @@ function App() {
         {/*   <div className="border-2  bg-base-100 flex flex-col justify-center p-3 lg:col-span-6 lg:row-span-2 lg:row-start-6 lg:self-start 2xl:border-2 ">
           <TechSkills />
         </div>  */}
-        <div className="border-2 bg-base-100  flex flex-col justify-center p-3  lg:col-span-3 lg:row-span-2 lg:col-start-10 lg:row-start-4 lg:self-start lg:justify-self-center ">
+        <div className="border-2 bg-base-100  flex flex-col justify-center p-3  lg:col-span-2 lg:row-span-2 lg:col-start-4 lg:row-start-4 w-full   ">
           <Contact />
+        </div>
+        <div className="border-2 flex flex-col p-3 bg-primary lg:col-start-4  lg:row-start-2 lg:row-span-2 lg:col-span-2 w-full items-center">
+          <img
+            className="h-25 w-30 object-cover"
+            src="https://placehold.net/4.png"
+          ></img>
         </div>
         {/*<div className="border-2 bg-base-100 flex flex-col p-3  lg:self-center  lg:flex-row lg:col-span-4 lg:row-span-2 lg:col-start-8 lg:row-start-6">
           <GithubStats isDark={isdark} />
