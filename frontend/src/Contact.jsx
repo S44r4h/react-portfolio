@@ -3,7 +3,7 @@ function Contact() {
     <>
       <h1 className="text-secondary font-bold">Contact</h1>
       <p>------------</p>
-      <p className="link link-primary py-1">Saara.Villman@gmail.com</p>
+      <p className="link link-primary py-1">Email</p>
 
       <a
         href="https://github.com/S44r4h"

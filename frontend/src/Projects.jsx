@@ -4,7 +4,7 @@ function Projects() {
       <p className="text-secondary font-bold">Projects</p>
       <p>------------</p>
       <div className="collapse collapse-arrow bg-base-100 border border-base-300">
-        <input type="radio" name="my-accordion-2" />
+        <input type="radio" name="my-accordion-2" defaultChecked />
         <div className="collapse-title  font-semibold">
           PixelList - <span className="text-primary">Mern-stack</span>
         </div>

@@ -4,13 +4,14 @@ function GithubStats({ isDark }) {
   if (!isDark) {
     githubTheme = "vue";
   } else {
-    githubTheme = "merko";
+    githubTheme = "nightowl"; /* merko nightowl chartreuse_dark */
   }
 
   return (
     <>
       <img
-        src={`https://raw.githubusercontent.com/S44r4h/S44r4h/main/profile-summary-card-output/${githubTheme}/0-profile-details.svg`}
+        className="border-2"
+        src={`https://raw.githubusercontent.com/S44r4h/S44r4h/main/profile-summary-card-output/${githubTheme}/1-repos-per-language.svg`}
         alt="GitHub-profilecard"
       />
     </>

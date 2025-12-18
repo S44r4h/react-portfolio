@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @plugin "daisyui" {
-  themes: light --default, abyss --prefersdark;
+  themes: nord --default, abyss --prefersdark;
 }
 /* winter ok, autumn hyvä */
 @theme {
