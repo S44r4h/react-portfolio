@@ -9,11 +9,13 @@ function GithubStats({ isDark }) {
 
   return (
     <>
-      <img
-        className="border-2"
-        src={`https://raw.githubusercontent.com/S44r4h/S44r4h/main/profile-summary-card-output/${githubTheme}/1-repos-per-language.svg`}
-        alt="GitHub-profilecard"
-      />
+      <a href="https://github.com/S44r4h" target="_blank">
+        <img
+          className="border-2"
+          src={`https://raw.githubusercontent.com/S44r4h/S44r4h/main/profile-summary-card-output/${githubTheme}/1-repos-per-language.svg`}
+          alt="GitHub-profilecard"
+        />
+      </a>
     </>
   );
 }

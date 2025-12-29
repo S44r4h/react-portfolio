@@ -48,15 +48,21 @@ function App() {
 
   return (
     <div className="flex flex-col w-screen justify-center items-center lg:">
-      <div className="grid grid-cols-1 w-9/10 gap-7 pt-5 pb-5 font-ibm min-[440px]:justify-items-center min-[620px]:w-7/10 md:text-lg lg:text-sm lg:w-full lg:grid-cols-12 lg:grid-rows-7 lg:gap-4 lg:px-3">
+      <div className="grid grid-cols-1 w-9/10 gap-7 pt-5 pb-5 font-ibm min-[440px]:justify-items-center min-[620px]:w-7/10 md:text-lg lg:text-sm 2xl:text-base lg:w-full lg:grid-cols-12 lg:grid-rows-7 lg:gap-4 lg:px-3">
         {/* Small upper-bar */}
         <div className="flex-row absolute top-0 left-0 hidden lg:flex">
           <UpperBar />
         </div>
-        <div className=" border-2 bg-base-100 flex flex-col p-3 items-center w-full  lg:flex-row lg:col-span-4 lg:row-span-2  lg:col-start-6 lg:row-start-2 2xl:self-center 2xl:py-20 ">
+        <div className="border-2 flex flex-col p-1 bg-primary lg:col-start-4  lg:row-start-2 lg:row-span-2 lg:col-span-2 w-full items-center">
+          <img
+            className=" h-full object-cover"
+            src="/src/profiili_j_kopio.jpeg"
+          ></img>
+        </div>
+        <div className=" border-2 bg-base-100 flex flex-col p-3 items-center w-full  lg:flex-row lg:col-span-4 lg:row-span-2  lg:col-start-6 lg:row-start-2   ">
           <Info />
         </div>
-        <div className="border-2 bg-base-100 flex flex-col p-3 lg:col-span-4 lg:col-start-6 row-span-2 row-start-4  ">
+        <div className="border-2 bg-base-100 flex flex-col p-3 lg:col-span-4 lg:col-start-6 row-span-2 row-start-4 w-full ">
           <Projects />
         </div>
         <div className="border-2  bg-base-100 flex-col  p-3 hidden lg:flex lg:col-start-12 lg:row-start-1 lg:self-center  2xl:border-2 ">
@@ -65,24 +71,18 @@ function App() {
         {/*   <div className="border-2  bg-base-100 flex flex-col justify-center p-3 lg:col-span-6 lg:row-span-2 lg:row-start-6 lg:self-start 2xl:border-2 ">
           <TechSkills />
         </div>  */}
-        <div className="border-2 bg-base-100  flex flex-col  p-3  lg:col-span-2 lg:row-span-1 lg:col-start-4 lg:row-start-4 w-full   ">
-          <Contact />
-        </div>
-        <div className="border-2 flex flex-col p-1 bg-primary lg:col-start-4  lg:row-start-2 lg:row-span-2 lg:col-span-2 w-full items-center">
-          <img
-            className=" h-full object-cover"
-            src="/src/profiili_j_kopio.jpeg"
-          ></img>
-        </div>
         <div className=" bg-base-100 flex flex-col  lg:col-span-2 lg:row-span-1 lg:col-start-4 lg:row-start-5">
           <GithubStats isDark={isdark} />
         </div>
         {/* TESTI */} {/* TÄSTÄ KOMPONENTTI PERJANTAINA  */}{" "}
-        <div className="border-2 bg-base-100   flex flex-col p-3 w-full lg:col-span-4 lg:row-span-1  lg:col-start-6  xl:row-start-6">
+        <div className="border-2 bg-base-100  flex flex-col  p-3  lg:col-span-2 lg:row-span-1 lg:col-start-4 lg:row-start-4 w-full   ">
+          <TechSkills />
+        </div>
+        <div className="border-2 bg-base-100   flex flex-col p-3 w-full lg:col-span-4 lg:row-span-1 lg:col-start-6 lg:row-start-6 ">
           <Movies list={movies} />
         </div>
         <div className="border-2 bg-base-100  flex flex-col  p-3  lg:col-span-2 lg:row-span-1 lg:col-start-4 lg:row-start-6 w-full   ">
-          <p>art</p>
+          <Contact />
         </div>
       </div>
     </div>
